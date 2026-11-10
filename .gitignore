@@ -1,0 +1,7 @@
+slprj/
+*.slxc
+*.asv
+*.autosave
+*.mexa64
+.claude/
+.mcp.json

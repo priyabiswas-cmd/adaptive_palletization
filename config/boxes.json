@@ -1,0 +1,38 @@
+{
+  "description": "Palletizing task plan for the UR10e. Boxes appear one after another at their start position (like the MathWorks example) and are placed at their goal, in the order listed.",
+  "units": "lengths in meters, weight in kilograms",
+  "frame": "world frame = simulation frame: origin on the floor directly under the robot base, x/y horizontal, z up",
+  "position_reference": "x, y = centre of the box bottom face; z = height of the box bottom face",
+  "spawning": "box 1 is on the conveyor at the start; each next box appears at its start position when the previous box has been placed on the pallet",
+  "conveyor": "static (belt does not move); boxes appear resting on its top surface at z = 0.50",
+  "pallet": "Euro pallet, top surface at z = 0.144",
+  "boxes": [
+    {
+      "id": 1,
+      "l": 0.20,
+      "b": 0.20,
+      "h": 0.20,
+      "weight": 1.0,
+      "start": { "x": -0.60, "y": 0.70, "z": 0.50 },
+      "goal":  { "x": -0.60, "y": -0.25, "z": 0.144 }
+    },
+    {
+      "id": 2,
+      "l": 0.20,
+      "b": 0.20,
+      "h": 0.20,
+      "weight": 1.0,
+      "start": { "x": -0.60, "y": 0.70, "z": 0.50 },
+      "goal":  { "x": -0.60, "y": -0.50, "z": 0.144 }
+    },
+    {
+      "id": 3,
+      "l": 0.20,
+      "b": 0.20,
+      "h": 0.20,
+      "weight": 1.0,
+      "start": { "x": -0.60, "y": 0.70, "z": 0.50 },
+      "goal":  { "x": -0.60, "y": -0.75, "z": 0.144 }
+    }
+  ]
+}
