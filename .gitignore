@@ -5,3 +5,4 @@ slprj/
 *.mexa64
 .claude/
 .mcp.json
+tools/matlab-mcp-core-server
